@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>The Ark</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class = "container">
+        <div class = "wrapper_header">
+            <a href = "#top" class = "logo element-animation"> The Ark | </a>
+            <ul class = "mnu_top">
+                <div class="footer">
+                    <h11>THE ARK 2021</h11>
+
+                </div>
+                <li><a href = "#main" class = "yakor element-animation"> о нас </a></li>
+                <li><a href = "#advantages" class = "yakor element-animation"> номера </a></li>
+                <li><a href = "#contacts" class = "yakor element-animation"> наши контакты </a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="container2" id="top">
+
+    <div class="text ">
+    <h2>Welcome!</h2>
+    <h5>У нас вы найдете номер на свой вкус.</h5>
+    <br>
+
+    <a href="#contacts" class="knopka yakor"> Перейти к бронированию.</a>
+    </div>
+
+    <div class="image ">
+    <img onmouseover="onMouseIconComm(this)" onmouseout="outMouseIconComm(this)" src="img/house1.png" width="80%" height="80%">
+    </div>
+
+
+
+</div>
+
+<div class="container3" id="main">
+    <div >
+    <br>
+    <h3 class="element-animation">
+        Деревенская привлекательность и ночная жизнь в самом сердце бруклинского района Boerum Hill.
+    </h3>
+    <br>
+    <br>
+    <br>
+    <h4 class="element-animation"> Дом расположен в месте встречи двух самых лучших и удобных районов Бруклина. Коббл Хилл, известный своими тихими улочками, ресторанами и магазинами, предлагает любому жителю все необходимое для полноценной
+        городской жизни. Boerum Hill, известный своими оживленными
+        барами и спокойными улочками с магазинами, предлагает
+        непосредственную близость к концертам и спортивным
+        мероприятиям в Barclays Center, а также к офисам и
+        центральному транспорту в центре Бруклина. Здесь есть все,
+        что вам нужно, в нескольких шагах от улицы Wyckoff.
+    </h4>
+    <div id="slides">
+        <img src="img/baner1.jpg" class="slide showing" height="600">
+        <img src="img/baner2.jpg" class="slide" height="600">
+        <img src="img/baner3.jpg" class="slide" height="600">
+
+    </div>
+    </div>
+
+    <h6 class="element-animation">Здесь вы можете просмотреть все номера и выбрать тот, который подходит именно вам</h6>
+    <div id="advantages">
+    <div class="num">
+    <img id="image" src="img/number 1.jpg" onClick="imgsrc();" height="600" width="850" >
+        <h7 class="element-animation"> У нас в ассортименте есть номера для любой семьи. Двухместные для супружеской пары. Трех и четырехместные для семейной пары.</h7>
+    </div>
+    </div>
+
+        <div class="container4" id="contacts">
+          <div class="form">
+              <form class="contact_form" action="" method="post" name="contact_form">
+
+                  <ul>
+
+                      <li>
+                          <h2 class="element-animation">Contact Us</h2>
+                          <span class="required_notification element-animation">Заполните форму, чтобы мы смогли свзязаться с вами</span>
+                      </li>
+                      <li>
+                          <label class="element-animation">ФИО:</label>
+                          <input type="text" name="name" placeholder="Петров Петр Петрович" required />
+                      </li>
+                      <li>
+                          <label class="element-animation">Email:</label>
+                          <input type="text" name="email" placeholder="email format" required />
+
+                      </li>
+                      <li>
+                          <label class="element-animation" >Телефон:</label>
+                          <input type="text" name="website" placeholder="(7/8)8005553535" required pattern="(8|7).+"/>
+
+                      </li>
+                      <li>
+                          <label class="element-animation" >Комментарий:</label>
+                          <textarea name="message" cols="40" rows="6" required > </textarea>
+                      </li>
+                      <li>
+                          <button class="submit element-animation" type="submit">Отправить</button>
+                      </li>
+
+
+
+
+
+                  </ul>
+              </form>
+          </div>
+         <div class="contact">
+             <h8 class="element-animation"> Наши контакты</h8>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <h9 font-size="25px" class="element-animation">therealark2.0@gmail.com</h9>
+             <br>
+             <br>
+             <h9 class="element-animation">88005553535</h9>
+             <br>
+             <br>
+
+             <br>
+             <br>
+             <h10 class="element-animation">По всем вопросам обращайтесь на почту</h10>
+             <h10 class="element-animation">или по номеру теелефона</h10>
+
+        </div>
+        </div>
+
+
+</div>
+
+
+
+
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="slidertext.js"></script>
+<script src="yakor.js"></script>
+<script src="scripts.js"></script>
+<script src="slide.js"></script>
+<script src="numb.js"></script>
+</html>
