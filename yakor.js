@@ -1,25 +1,14 @@
-$(function(){
 
-  new WOW().init();
-
-  $(".hamburger").click(function(){
-  $(this).toggleClass("is-active");
-  if($(this).hasClass('is-active')){
-    $('.mnu_top').slideDown(300)
-  } else {
-    $('.mnu_top').slideUp(300)
-  }
-
-  });
-$('a.yakor').on('click',function (event){
-  var $anchor=$(this);
-  scrollTop: $($anchor.attr('href')).offset().top-70
-},{
-  duration: 2000,
-  specialEasing:{
-    width: "linear",
-    height:"easeInOutCubic"
-  }
-});
-event.preventDefault();
-});
+const anchors = document.querySelectorAll('a[href^="#"]')
+for(let anchor of anchors) {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault() // Предотвратить стандартное поведение ссылок
+    // Атрибут href у ссылки, если его нет то перейти к body (наверх не плавно)
+    const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
+    // Плавная прокрутка до элемента с id = href у ссылки
+    document.querySelector(goto).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  })
+}
